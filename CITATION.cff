@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+authors:
+  - family-names: Nestorov
+    given-names: Ivan
+    affiliation: "VolMax Studio Lab d.o.o."
+    orcid: "https://orcid.org/0009-0006-7940-9539"
+title: "PV Anomaly Detection — A Real-Meteorology Injected-Fault Benchmark for Unsupervised PV Diagnostics"
+version: 1.0.0
+license: "MIT"
+date-released: 2026-06-20
+url: "https://github.com/VolMax-Studio/PV_Anomaly_Detection"
+abstract: >-
+  A controlled anomaly-detection benchmark for photovoltaic systems on
+  physically-grounded inputs. A clean power baseline is generated from real
+  NREL TMY3 meteorological data (ASOS station 723170, Greensboro NC — 8760
+  hours of measured irradiance and temperature) and real CEC module parameters
+  (Canadian Solar CS5P-250M) via the pvlib de Soto (2006) single-diode model;
+  no synthetic meteorology is used. Synthetic faults of four physical classes
+  — soiling, partial shading, potential-induced degradation (PID), and inverter
+  clipping/dropout — are injected as ground-truth labels, and an Isolation
+  Forest is scored against those labels over daylight hours. The detector
+  operates in a high-precision, conservative-recall regime: Precision 0.985,
+  Recall 0.565, F1 0.718 (1382 flags over 3881 daylight hours). Because
+  ground truth is injected rather than field-verified, the results characterise
+  detector behaviour on a controlled benchmark, not field fault-detection
+  accuracy. Includes the full pvlib simulation, fault injector, Isolation
+  Forest detector, and 26 passing tests.
+keywords:
+  - photovoltaic
+  - anomaly detection
+  - isolation forest
+  - pvlib
+  - de Soto single-diode model
+  - TMY3
+  - soiling
+  - PID
+  - fault-injection benchmark
+  - unsupervised learning
+  - solar energy

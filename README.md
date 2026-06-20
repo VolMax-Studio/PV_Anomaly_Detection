@@ -71,6 +71,8 @@ TMY3 is a Typical Meteorological Year derived from multi-year real measurements,
 
 Recall of 0.565 reflects that slow PID degradation (gradual power reduction) is harder to isolate with Isolation Forest at 1-hour granularity. High precision (0.985) means very few false alarms — important for field deployment.
 
+**Note:** Precision and recall are scored against **injected** ground-truth labels, not field-verified faults. These results characterize detector behaviour on a controlled benchmark, not field fault-detection accuracy.
+
 PR values briefly exceeding 1.0 in winter are **physically correct**: at low temperatures (T_cell < 25°C), the negative temperature coefficient boosts P_mp above STC rating.
 
 ---
@@ -80,7 +82,7 @@ PR values briefly exceeding 1.0 in winter are **physically correct**: at low tem
 ```bash
 pip install -r requirements.txt
 python3 run_pipeline.py          # full pipeline
-pytest tests/ -v                 # 17 tests, all pass
+pytest tests/ -v                 # 26 tests, all pass
 ```
 
 ---
