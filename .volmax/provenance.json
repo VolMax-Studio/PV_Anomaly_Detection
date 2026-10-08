@@ -1,0 +1,27 @@
+{
+  "baseline_commit": "c48c40d3d4c1e5a5ec3e20dccd7ba5b29468509c",
+  "baseline_tree": "3590f71565dcdc76b43efc263b96051bda5779a7",
+  "behavior": {
+    "callbacks": false,
+    "executable": false,
+    "network_calls": false,
+    "telemetry": false
+  },
+  "canonical_url": "https://github.com/VolMax-Studio/PV_Anomaly_Detection",
+  "default_branch_at_recording": "main",
+  "license": {
+    "detected_spdx": "MIT",
+    "files": [
+      "LICENSE"
+    ],
+    "note": "This provenance record does not grant or alter license rights."
+  },
+  "owner": "VolMax-Studio",
+  "record_id": "urn:volmax:github:VolMax-Studio/PV_Anomaly_Detection:c48c40d3d4c1e5a5ec3e20dccd7ba5b29468509c",
+  "record_type": "volmax.repository-provenance",
+  "record_version": 1,
+  "recorded_at": "2026-10-08T19:23:36+00:00",
+  "repository": "VolMax-Studio/PV_Anomaly_Detection",
+  "schema": "urn:volmax:provenance:v1",
+  "scope": "Repository identity and baseline commit only; historical tags, releases, evidence, authorship, and existing file bytes are unchanged."
+}
